@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSwiftApi.Api", "CustomSwiftApi.Api\CustomSwiftApi.Api.csproj", "{88515915-7B36-4811-8026-27EE3425A688}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomSwiftApi.Api", "CustomSwiftApi.Api\CustomSwiftApi.Api.csproj", "{88515915-7B36-4811-8026-27EE3425A688}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSwiftApi.Service", "CustomSwiftApi.Service\CustomSwiftApi.Service.csproj", "{67B3D507-1B9C-4F97-94F1-A33054AFD01C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomSwiftApi.Service", "CustomSwiftApi.Service\CustomSwiftApi.Service.csproj", "{67B3D507-1B9C-4F97-94F1-A33054AFD01C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSwiftApi.Infrastructure", "CustomSwiftApi.Infrastructure\CustomSwiftApi.Infrastructure.csproj", "{5A59EA18-A6A5-4531-BD47-3F7684AE0A5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomSwiftApi.Infrastructure", "CustomSwiftApi.Infrastructure\CustomSwiftApi.Infrastructure.csproj", "{5A59EA18-A6A5-4531-BD47-3F7684AE0A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
