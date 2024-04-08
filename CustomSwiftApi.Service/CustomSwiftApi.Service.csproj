@@ -7,12 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="DtoModels\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CustomSwiftApi.Infrastructure\CustomSwiftApi.Infrastructure.csproj" />
   </ItemGroup>
 
