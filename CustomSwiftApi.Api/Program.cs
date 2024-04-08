@@ -1,15 +1,27 @@
+using CustomSwiftApi.Infrastructure.Contracts;
+using CustomSwiftApi.Infrastructure.Models;
+using CustomSwiftApi.Infrastructure.Repositories;
+using CustomSwiftApi.Service.Contracts;
+using CustomSwiftApi.Service.Services;
+using Microsoft.Data.Sqlite;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddScoped(provider =>
+{
+    string connectionString = builder.Configuration.GetConnectionString("SQLiteConnectionString") ?? string.Empty;
+    return new SqliteConnection(connectionString);
+});
+builder.Services.AddScoped<IRepository<SwiftMessage>, SwiftMessageRepository>();
+builder.Services.AddScoped<ISwiftMessageService, SwiftMessageService>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
