@@ -4,6 +4,7 @@ using CustomSwiftApi.Infrastructure.Repositories;
 using CustomSwiftApi.Service.Contracts;
 using CustomSwiftApi.Service.Services;
 using Microsoft.Data.Sqlite;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,11 @@ builder.Services.AddScoped<ISwiftMT799MessageService, SwiftMT799MessageService>(
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .CreateLogger();
 
 var app = builder.Build();
 
@@ -34,4 +40,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+await app.RunAsync();
