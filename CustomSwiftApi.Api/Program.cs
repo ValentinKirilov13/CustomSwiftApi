@@ -12,8 +12,8 @@ builder.Services.AddScoped(provider =>
     string connectionString = builder.Configuration.GetConnectionString("SQLiteConnectionString") ?? string.Empty;
     return new SqliteConnection(connectionString);
 });
-builder.Services.AddScoped<IRepository<SwiftMessage>, SwiftMessageRepository>();
-builder.Services.AddScoped<ISwiftMessageService, SwiftMessageService>();
+builder.Services.AddScoped<IRepository<SwiftMT799Message>, SwiftMT799MessageRepository>();
+builder.Services.AddScoped<ISwiftMT799MessageService, SwiftMT799MessageService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

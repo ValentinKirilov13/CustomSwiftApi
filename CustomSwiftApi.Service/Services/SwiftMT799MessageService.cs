@@ -4,11 +4,11 @@ using CustomSwiftApi.Service.Contracts;
 
 namespace CustomSwiftApi.Service.Services
 {
-    public class SwiftMessageService : ISwiftMessageService
+    public class SwiftMT799MessageService : ISwiftMT799MessageService
     {
-        private readonly IRepository<SwiftMessage> _repository;
+        private readonly IRepository<SwiftMT799Message> _repository;
 
-        public SwiftMessageService(IRepository<SwiftMessage> repository)
+        public SwiftMT799MessageService(IRepository<SwiftMT799Message> repository)
         {
             _repository = repository;
         }

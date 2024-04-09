@@ -4,17 +4,17 @@ using Microsoft.Data.Sqlite;
 
 namespace CustomSwiftApi.Infrastructure.Repositories
 {
-    public class SwiftMessageRepository : IRepository<SwiftMessage>
+    public class SwiftMT799MessageRepository : IRepository<SwiftMT799Message>
     {
         private readonly SqliteConnection _connection;
 
-        public SwiftMessageRepository(SqliteConnection connection)
+        public SwiftMT799MessageRepository(SqliteConnection connection)
         {
             _connection = connection;
             InitializeDatabaseAsync().GetAwaiter().GetResult();
         }
 
-        public async Task Insert(SwiftMessage entity)
+        public async Task Insert(SwiftMT799Message entity)
         {
             throw new NotImplementedException();
         }

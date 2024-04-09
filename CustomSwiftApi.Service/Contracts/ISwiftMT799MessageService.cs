@@ -1,6 +1,6 @@
 ﻿namespace CustomSwiftApi.Service.Contracts
 {
-    public interface ISwiftMessageService
+    public interface ISwiftMT799MessageService
     {
 
     }

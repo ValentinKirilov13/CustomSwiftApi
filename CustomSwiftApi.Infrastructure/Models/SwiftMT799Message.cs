@@ -1,6 +1,6 @@
 ﻿namespace CustomSwiftApi.Infrastructure.Models
 {
-    public class SwiftMessage
+    public class SwiftMT799Message
     {
 
     }

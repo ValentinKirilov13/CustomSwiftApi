@@ -1,6 +1,6 @@
 ﻿namespace CustomSwiftApi.Service.DtoModels
 {
-    public class SwiftMessageDtoModel
+    public class SwiftMT799MessageDtoModel
     {
 
     }
