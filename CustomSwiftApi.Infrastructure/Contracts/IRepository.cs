@@ -2,6 +2,6 @@
 {
     public interface IRepository<T> where T : class
     {
-        Task Insert(T entity);
+        Task<bool> InsertAsync(T entity);
     }
 }
